@@ -1,14 +1,20 @@
 {
-  "include": ["./src/**/*"],
-  "exclude": ["./node_modules"],
-  "compilerOptions": {    
-    "target": "es6",    
+  "include": [
+    "./src/**/*",
+    "src/scenarios/Store.spec.ts",
+    "CadastroDelivery.spec.ts"
+  ],
+  "exclude": [
+    "./node_modules"
+  ],
+  "compilerOptions": {
+    "target": "es6",
     "module": "commonjs",
-    "rootDir": "./src",    
-    "outDir": "./dist",    
-    "esModuleInterop": true,    
-    "forceConsistentCasingInFileNames": true,    
-    "strict": true,    
+    "rootDir": "./src",
+    "outDir": "./dist",
+    "esModuleInterop": true,
+    "forceConsistentCasingInFileNames": true,
+    "strict": true,
     "skipLibCheck": true
   }
 }

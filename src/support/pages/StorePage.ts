@@ -14,4 +14,12 @@ export default class StorePage extends BasePage {
   async searchProductByName(): Promise<void> {
     await expect(this.storeElements.getProductField()).toBeVisible();
   }
+
+  async addProductToCart(): Promise<void> {
+    const product = await this.storeElements.getProductField();
+
+    product.getByText('Add to cart').click();
+
+    await expect(this.storeElements.getCart()).toBeVisible();
+  }
 }

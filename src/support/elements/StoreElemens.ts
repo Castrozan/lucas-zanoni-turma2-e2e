@@ -11,23 +11,7 @@ export default class StoreElements extends BaseElements {
     return this.page.locator('div[alt="Cropped Stay Groovy off white"]');
   }
 
-  getSearchButton(): Locator {
-    return this.page.locator('button[name="submit_search"]');
-  }
-
-  getProductCount(): Locator {
-    return this.page.locator('span[class="heading-counter"]');
-  }
-
-  getLoginField(): Locator {
-    return this.page.locator('#user-name');
-  }
-
-  getPassField(): Locator {
-    return this.page.locator('#password');
-  }
-
-  getSubmitButton(): Locator {
-    return this.page.locator('#login-button');
+  getCart(): Locator {
+    return this.page.locator('span[Cart]');
   }
 }

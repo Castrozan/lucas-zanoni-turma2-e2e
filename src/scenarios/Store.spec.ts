@@ -18,4 +18,8 @@ test.describe('Find Products', () => {
   test('Find product by name', async () => {
     await storePage.searchProductByName();
   });
+
+  test('Add product to cart', async () => {
+    await storePage.addProductToCart();
+  });
 });
