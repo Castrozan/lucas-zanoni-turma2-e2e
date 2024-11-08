@@ -20,6 +20,6 @@ export default class StoreElements extends BaseElements {
   }
 
   getButtonAddToCartForProduct(): Locator {
-    return this.page.locator('button[text="Add to cart"]').first();
+    return this.page.locator('text=Add to cart').first();
   }
 }
