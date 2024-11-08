@@ -20,6 +20,6 @@ export default class StoreElements extends BaseElements {
   }
 
   getButtonAddToCartForProduct(): Locator {
-    return this.page.locator('div[alt="Cropped Stay Groovy off white"] >> text=Add to cart');
+    return this.page.locator('button:has-text("Add to cart"):near(div[alt="Cropped Stay Groovy off white"])');
   }
 }
