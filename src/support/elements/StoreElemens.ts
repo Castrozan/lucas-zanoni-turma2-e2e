@@ -12,7 +12,7 @@ export default class StoreElements extends BaseElements {
   }
 
   getCart(): Locator {
-    return this.page.locator('span[text="Cart"]');
+    return this.page.locator('text=Checkout');
   }
 
   getButtonAddToCart(): Locator {
