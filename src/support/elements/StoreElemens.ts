@@ -18,4 +18,8 @@ export default class StoreElements extends BaseElements {
   getButtonAddToCart(): Locator {
     return this.page.locator('text=Add to cart');
   }
+
+  getButtonAddToCartForProduct(): Locator {
+    return this.page.locator('div[alt="Cropped Stay Groovy off white"] >> text=Add to cart');
+  }
 }
