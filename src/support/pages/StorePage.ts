@@ -17,7 +17,7 @@ export default class StorePage extends BasePage {
 
   async addProductToCart(): Promise<void> {
     await this.storeElements.getProductField();
-    await this.storeElements.getButtonAddToCartForProduct().click();
+    await this.storeElements.getButtonAddToCart().click();
     await expect(this.storeElements.getCart()).toBeVisible();
   }
 }
